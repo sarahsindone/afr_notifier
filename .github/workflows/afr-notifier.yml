@@ -2,8 +2,8 @@ name: AFR Equity Notifier
 
 on:
   schedule:
-    # run every minute
-    - cron: "* * * * *"
+    - cron: '*/1 * * * *'      # every minute
+  workflow_dispatch:          # allows manual runs
 
 jobs:
   notify:
